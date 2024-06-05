@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiku place</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Kiku place 🌸</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#school">Escuela</a>
+            <a href="#blog">Blog</a>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="active">
+            <h2>Holiwis amiguito :3</h2>
+            <p>Contenido y material que puede ser útil o chisme,</p>
+            <img src="https://i.imgur.com/r41n9mk_d.webp?maxwidth=760&fidelity=grand" alt="Imagen destacada">
+            <div class="features">
+                <div class="feature">
+                    <h3>Ayuda en tareas 24hrs ☎️</h3>
+                    <p>Comunícate al número +1 (343) 341-4284.</p>
+                </div>
+                <div class="feature">
+                    <h3>Contacto formal ☕</h3>
+                    <p>its.niskoo@gmail.com</p>
+                </div>
+                <div class="feature">
+                    <h3>Apoyo a proyectos 🤓</h3>
+                    <p>Comunicate vía WhatsApp para cotizar.</p>
+                </div>
+            </div>
+        </section>
+        <section id="school">
+            <h2>Escuela</h2>
+            <p>Artículos y recursos sobre temas escolares (próximamente chismes en un apartado).</p>
+            <div id="school-entries"></div>
+            <button class="auth-btn" data-section="school">Subir Documento</button>
+            <div class="upload-container" id="upload-school">
+                <textarea placeholder="Escribe tu documento aquí..."></textarea>
+                <input type="file" accept=".pdf,.doc,.docx,.ppt,.pptx,image/*">
+                <button class="upload-btn">Subir</button>
+                <button class="close-btn">Cerrar Interfaz</button>
+            </div>
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Lee sobre mi día a día o algunos relatos delulu.</p>
+            <div id="blog-entries"></div>
+            <button class="auth-btn" data-section="blog">Subir Entrada</button>
+            <div class="upload-container" id="upload-blog">
+                <textarea placeholder="Escribe tu entrada aquí..."></textarea>
+                <input type="file" accept=".pdf,.doc,.docx,.ppt,.pptx,image/*">
+                <button class="upload-btn">Subir</button>
+                <button class="close-btn">Cerrar Interfaz</button>
+            </div>
+        </section>
+    </main>
+    <section id="signup">
+        <h2>Crear Cuenta</h2>
+        <form id="signup-form">
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 KiKu. Todos los derechos reservados.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
